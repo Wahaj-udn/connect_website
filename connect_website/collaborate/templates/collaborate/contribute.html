@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funding Project Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Full-width image */
+    .full-width-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page title -->
+  <div class="container my-5">
+    <h1 class="text-center">Our Funding Projects</h1>
+  </div>
+
+  <!-- Full-width image -->
+  <div class="container-fluid p-0">
+    <!-- Replace with your image -->
+    <img src="fund.jpg" alt="Funding Banner" class="full-width-img">
+  </div>
+
+  <!-- Table of Projects -->
+  <div class="container my-5">
+    <h2 class="mb-4">Projects Needing Funding</h2>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Goal Amount</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example Project -->
+        <tr>
+          <td>Project A</td>
+          <td>Building a new community center for underprivileged youth.</td>
+          <td>$50,000</td>
+          <td>In Progress</td>
+          <td>
+            <!-- Button to show more details -->
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#projectDetails" aria-expanded="false" aria-controls="projectDetails">
+              View Details
+            </button>
+          </td>
+        </tr>
+        <!-- Example Project -->
+        <tr>
+          <td>Project B</td>
+          <td>Clean Water Project for rural areas.</td>
+          <td>$30,000</td>
+          <td>Pending</td>
+          <td>
+            <!-- Button to show more details -->
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#projectDetailsB" aria-expanded="false" aria-controls="projectDetailsB">
+              View Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Hidden project details -->
+    <div class="collapse" id="projectDetails">
+      <div class="card card-body">
+        <h4>Project A Details</h4>
+        <p>This project aims to build a new community center for underprivileged youth in the downtown area, offering them a safe space for educational and recreational activities. Your donation will help us reach our goal of $50,000.</p>
+        
+        <!-- Donate Now Button -->
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#contactInfo" aria-expanded="false" aria-controls="contactInfo">
+          Donate Now
+        </button>
+
+        <!-- Contact Info Dropdown (initially hidden) -->
+        <div class="collapse mt-3" id="contactInfo">
+          <h5>Contact Information</h5>
+          <p><strong>Email:</strong> donate@communitycenter.org</p>
+          <p><strong>Phone:</strong> +123-456-7890</p>
+          <p><strong>Address:</strong> 123 Main Street, Downtown, City</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another project details collapse -->
+    <div class="collapse" id="projectDetailsB">
+      <div class="card card-body">
+        <h4>Project B Details</h4>
+        <p>This project aims to provide clean water to rural areas by installing filtration systems in several villages. The total funding goal is $30,000.</p>
+        
+        <!-- Donate Now Button -->
+        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#contactInfoB" aria-expanded="false" aria-controls="contactInfoB">
+          Donate Now
+        </button>
+
+        <!-- Contact Info Dropdown (initially hidden) -->
+        <div class="collapse mt-3" id="contactInfoB">
+          <h5>Contact Information</h5>
+          <p><strong>Email:</strong> donate@cleanwaterproject.org</p>
+          <p><strong>Phone:</strong> +123-456-7890</p>
+          <p><strong>Address:</strong> 456 Rural Lane, Village</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
